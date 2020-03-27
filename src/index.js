@@ -1,14 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Offers from './Offers';
+import Suggest from './Suggest';
+import Task from './Task';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Offers />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('offers')
+);
+ReactDOM.render(
+  <React.StrictMode>
+    <Suggest />
+  </React.StrictMode>,
+  document.getElementById('suggest')
+);
+ReactDOM.render(
+  <React.StrictMode>
+    <Task />
+  </React.StrictMode>,
+  document.getElementById('task')
 );
 
 // If you want your app to work offline and load faster, you can change
